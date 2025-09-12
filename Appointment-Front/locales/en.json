@@ -1,0 +1,209 @@
+{
+  "login": {
+    "title": "Scheduler Login",
+    "welcome": "Welcome back! Please sign in.",
+    "emailPlaceholder": "Email Address",
+    "passwordPlaceholder": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "signInButton": "Sign In",
+    "signingIn": "Signing in...",
+    "demoAccounts": {
+      "title": "Demo Accounts",
+      "email": "Email:",
+      "password": "Password:"
+    }
+  },
+  "dashboard": {
+    "title": "Scheduler Dashboard",
+    "subtitle": "Configure your availability and generate booking slots.",
+    "logout": "Logout",
+    "languageSelectorLabel": "Change language",
+    "settings": {
+      "title": "Settings",
+      "duration": "Appointment Duration (minutes)"
+    },
+    "ai": {
+      "title": "Need a starting point?",
+      "description": "Let AI suggest a schedule based on a job role.",
+      "placeholder": "e.g., Part-time tutor",
+      "button": "AI-Powered Suggestion",
+      "loadingButton": "Suggesting..."
+    }
+  },
+  "exportDoc": {
+    "title": "Export Documentation",
+    "buttonLabel": "Export to Google Doc",
+    "copyButton": "Copy HTML to Clipboard",
+    "copied": "Copied!",
+    "instructions": {
+        "title": "Instructions",
+        "step1": "Click the 'Copy HTML' button above.",
+        "step2": "Open a new Google Doc in your browser.",
+        "step3": "Paste the content (using Ctrl+V or Cmd+V). The formatting will be preserved."
+    }
+  },
+  "tabs": {
+    "schedule": "Schedule",
+    "bookingLink": "Booking Link",
+    "userManagement": "User Management",
+    "ratings": "Ratings"
+  },
+  "bookingLink": {
+    "title": "Your Public Booking Link",
+    "description": "Share this link with your clients to allow them to book appointments based on your configured schedule.",
+    "copy": "Copy Link",
+    "copied": "Copied!"
+  },
+  "ratingLink": {
+    "title": "Your Public Rating Link",
+    "description": "Share this link with clients after their appointment to let them rate the service they received."
+  },
+  "userManagement": {
+    "title": "User Management",
+    "description": "Add, edit, or remove users from your organization.",
+    "addUser": "Add User",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "actions": "Actions"
+    },
+    "form": {
+      "addUserTitle": "Add a New User",
+      "editUserTitle": "Edit User",
+      "name": "Full Name",
+      "email": "Email Address",
+      "role": "Role",
+      "password": "Password",
+      "passwordHint": "Leave blank to keep current password",
+      "save": "Save User",
+      "saving": "Saving...",
+      "cancel": "Cancel"
+    },
+    "delete": {
+      "confirmTitle": "Delete User",
+      "confirmMessage": "Are you sure you want to delete {name}? This action cannot be undone.",
+      "deleteButton": "Delete",
+      "deleting": "Deleting..."
+    },
+    "notifications": {
+      "userCreated": "User created successfully.",
+      "userUpdated": "User updated successfully.",
+      "userDeleted": "User deleted successfully."
+    }
+  },
+  "publicBooking": {
+    "title": "Book an Appointment",
+    "subtitle": "Select an available day and time slot below.",
+    "selectSlot": "Select a time",
+    "noSlotsToday": "No available slots for this day.",
+    "noSlotsWeek": {
+      "title": "No Appointments Available",
+      "description": "There are currently no available time slots. Please check back later."
+    },
+    "confirm": {
+      "title": "Confirm Your Booking",
+      "slot": "You selected:",
+      "yourName": "Your Name",
+      "yourEmail": "Your Email",
+      "confirmButton": "Confirm Booking",
+      "booking": "Booking..."
+    },
+    "success": {
+      "title": "Booking Confirmed!",
+      "message": "Your appointment has been successfully scheduled. A confirmation has been sent to your email.",
+      "bookAnother": "Book Another Appointment"
+    }
+  },
+  "publicRating": {
+    "title": "Rate Your Appointment",
+    "find": {
+      "title": "Find Your Appointment",
+      "description": "Please enter the email address you used to book your appointment to leave a rating.",
+      "emailPlaceholder": "Your Email Address",
+      "findButton": "Find Appointment",
+      "finding": "Finding..."
+    },
+    "rate": {
+      "title": "Leave Your Rating",
+      "subtitle": "Rating for your appointment on {day} at {time}.",
+      "ratingLabel": "Your rating",
+      "commentsLabel": "Observations (optional)",
+      "commentsPlaceholder": "Tell us more about your experience...",
+      "submitButton": "Submit Rating",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "Thank You!",
+      "message": "Your feedback has been received. We appreciate you taking the time to rate our service."
+    }
+  },
+  "adminRatings": {
+    "title": "Customer Ratings",
+    "description": "See what your customers are saying about your service.",
+    "average": "Average Rating",
+    "total": "Total Ratings",
+    "noRatings": "No ratings have been submitted yet.",
+    "ratedOn": "Rated on"
+  },
+  "schedule": {
+    "title": "Weekly Schedule",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "overbooking": {
+      "title": "Overbooking Rules",
+      "addRule": "Add Rule",
+      "delete": "Delete rule",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "capacity": "Capacity",
+      "saveRule": "Save Rule",
+      "cancel": "Cancel",
+      "noRules": "No overbooking rules defined."
+    }
+  },
+  "calendar": {
+    "title": "Available Slots Preview",
+    "totalAppointments": "{count} total appointments available for the week.",
+    "noSlots": {
+      "title": "No Slots Generated",
+      "description": "Enable workdays and set a slot duration to see available appointments here."
+    }
+  },
+  "days": {
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday",
+    "Sunday": "Sunday"
+  },
+  "roles": {
+    "owner": "Owner",
+    "manager": "Manager",
+    "leader": "Leader",
+    "employee": "Employee"
+  },
+  "error": {
+    "unknown": "An unknown error occurred.",
+    "login": {
+      "invalidCredentials": "Invalid email or password"
+    },
+    "gemini": {
+      "apiKeyMissing": "API_KEY not found. AI features disabled.",
+      "roleRequired": "Please enter a role to get a suggestion.",
+      "invalidFormat": "Invalid schedule format received from AI.",
+      "suggestionFailed": "Failed to get a schedule suggestion. The AI may be busy or the request was invalid."
+    },
+    "user": {
+        "emailExists": "A user with this email already exists."
+    },
+    "rating": {
+      "noBookingFound": "No recent, unrated appointments found for this email address.",
+      "alreadyRated": "This appointment has already been rated.",
+      "mustSelectRating": "You must select a star rating."
+    }
+  }
+}

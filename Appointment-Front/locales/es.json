@@ -1,0 +1,209 @@
+{
+  "login": {
+    "title": "Iniciar Sesión",
+    "welcome": "¡Bienvenido de nuevo! Por favor, inicia sesión.",
+    "emailPlaceholder": "Correo Electrónico",
+    "passwordPlaceholder": "Contraseña",
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña",
+    "signInButton": "Iniciar Sesión",
+    "signingIn": "Iniciando sesión...",
+    "demoAccounts": {
+      "title": "Cuentas de Demostración",
+      "email": "Email:",
+      "password": "Contraseña:"
+    }
+  },
+  "dashboard": {
+    "title": "Panel de Horarios",
+    "subtitle": "Configura tu disponibilidad y genera espacios para citas.",
+    "logout": "Cerrar sesión",
+    "languageSelectorLabel": "Cambiar idioma",
+    "settings": {
+      "title": "Configuración",
+      "duration": "Duración de la Cita (minutos)"
+    },
+    "ai": {
+      "title": "¿Necesitas un punto de partida?",
+      "description": "Deja que la IA sugiera un horario basado en un rol profesional.",
+      "placeholder": "Ej: Tutor a tiempo parcial",
+      "button": "Sugerencia con IA",
+      "loadingButton": "Sugiriendo..."
+    }
+  },
+  "exportDoc": {
+    "title": "Exportar Documentación",
+    "buttonLabel": "Exportar a Google Doc",
+    "copyButton": "Copiar HTML al Portapapeles",
+    "copied": "¡Copiado!",
+    "instructions": {
+        "title": "Instrucciones",
+        "step1": "Haz clic en el botón 'Copiar HTML' de arriba.",
+        "step2": "Abre un nuevo Google Doc en tu navegador.",
+        "step3": "Pega el contenido (usando Ctrl+V o Cmd+V). El formato se conservará."
+    }
+  },
+  "tabs": {
+    "schedule": "Horario",
+    "bookingLink": "Enlace de Reserva",
+    "userManagement": "Gestionar Usuarios",
+    "ratings": "Calificaciones"
+  },
+  "bookingLink": {
+    "title": "Tu Enlace de Reserva Público",
+    "description": "Comparte este enlace con tus clientes para permitirles reservar citas según tu horario configurado.",
+    "copy": "Copiar Enlace",
+    "copied": "¡Copiado!"
+  },
+  "ratingLink": {
+    "title": "Tu Enlace de Calificación Público",
+    "description": "Comparte este enlace con los clientes después de su cita para que puedan calificar el servicio recibido."
+  },
+  "userManagement": {
+    "title": "Gestión de Usuarios",
+    "description": "Añade, edita o elimina usuarios de tu organización.",
+    "addUser": "Añadir Usuario",
+    "table": {
+      "name": "Nombre",
+      "email": "Correo",
+      "role": "Rol",
+      "actions": "Acciones"
+    },
+    "form": {
+      "addUserTitle": "Añadir un Nuevo Usuario",
+      "editUserTitle": "Editar Usuario",
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "role": "Rol",
+      "password": "Contraseña",
+      "passwordHint": "Dejar en blanco para mantener la contraseña actual",
+      "save": "Guardar Usuario",
+      "saving": "Guardando...",
+      "cancel": "Cancelar"
+    },
+    "delete": {
+      "confirmTitle": "Eliminar Usuario",
+      "confirmMessage": "¿Estás seguro de que quieres eliminar a {name}? Esta acción no se puede deshacer.",
+      "deleteButton": "Eliminar",
+      "deleting": "Eliminando..."
+    },
+    "notifications": {
+      "userCreated": "Usuario creado con éxito.",
+      "userUpdated": "Usuario actualizado con éxito.",
+      "userDeleted": "Usuario eliminado con éxito."
+    }
+  },
+  "publicBooking": {
+    "title": "Reservar una Cita",
+    "subtitle": "Selecciona un día y un horario disponibles a continuación.",
+    "selectSlot": "Seleccionar una hora",
+    "noSlotsToday": "No hay horarios disponibles para este día.",
+    "noSlotsWeek": {
+      "title": "No Hay Citas Disponibles",
+      "description": "Actualmente no hay horarios disponibles. Por favor, vuelve a consultar más tarde."
+    },
+    "confirm": {
+      "title": "Confirma Tu Reserva",
+      "slot": "Seleccionaste:",
+      "yourName": "Tu Nombre",
+      "yourEmail": "Tu Correo Electrónico",
+      "confirmButton": "Confirmar Reserva",
+      "booking": "Reservando..."
+    },
+    "success": {
+      "title": "¡Reserva Confirmada!",
+      "message": "Tu cita ha sido programada con éxito. Se ha enviado una confirmación a tu correo electrónico.",
+      "bookAnother": "Reservar Otra Cita"
+    }
+  },
+  "publicRating": {
+    "title": "Califica tu Cita",
+    "find": {
+      "title": "Encuentra tu Cita",
+      "description": "Por favor, introduce la dirección de correo electrónico que usaste para reservar tu cita y así poder calificarla.",
+      "emailPlaceholder": "Tu Correo Electrónico",
+      "findButton": "Encontrar Cita",
+      "finding": "Buscando..."
+    },
+    "rate": {
+      "title": "Deja tu Calificación",
+      "subtitle": "Calificación para tu cita del {day} a las {time}.",
+      "ratingLabel": "Tu puntuación",
+      "commentsLabel": "Observaciones (opcional)",
+      "commentsPlaceholder": "Cuéntanos más sobre tu experiencia...",
+      "submitButton": "Enviar Calificación",
+      "submitting": "Enviando..."
+    },
+    "success": {
+      "title": "¡Gracias!",
+      "message": "Hemos recibido tus comentarios. Agradecemos que te hayas tomado el tiempo para calificar nuestro servicio."
+    }
+  },
+  "adminRatings": {
+    "title": "Calificaciones de Clientes",
+    "description": "Mira lo que tus clientes dicen sobre tu servicio.",
+    "average": "Calificación Promedio",
+    "total": "Calificaciones Totales",
+    "noRatings": "Aún no se han enviado calificaciones.",
+    "ratedOn": "Calificado el"
+  },
+  "schedule": {
+    "title": "Horario Semanal",
+    "startTime": "Hora de Inicio",
+    "endTime": "Hora de Fin",
+    "overbooking": {
+      "title": "Reglas de Sobreturno",
+      "addRule": "Añadir Regla",
+      "delete": "Eliminar regla",
+      "startTime": "Hora Inicio",
+      "endTime": "Hora Fin",
+      "capacity": "Capacidad",
+      "saveRule": "Guardar Regla",
+      "cancel": "Cancelar",
+      "noRules": "No hay reglas de sobreturno definidas."
+    }
+  },
+  "calendar": {
+    "title": "Vista Previa de Espacios Disponibles",
+    "totalAppointments": "{count} citas totales disponibles para la semana.",
+    "noSlots": {
+      "title": "No se Generaron Espacios",
+      "description": "Habilita días laborables y establece una duración de cita para ver los espacios disponibles aquí."
+    }
+  },
+  "days": {
+    "Monday": "Lunes",
+    "Tuesday": "Martes",
+    "Wednesday": "Miércoles",
+    "Thursday": "Jueves",
+    "Friday": "Viernes",
+    "Saturday": "Sábado",
+    "Sunday": "Domingo"
+  },
+  "roles": {
+    "owner": "Propietario",
+    "manager": "Gerente",
+    "leader": "Líder",
+    "employee": "Empleado"
+  },
+  "error": {
+    "unknown": "Ocurrió un error desconocido.",
+    "login": {
+      "invalidCredentials": "Correo electrónico o contraseña no válidos"
+    },
+    "gemini": {
+      "apiKeyMissing": "API_KEY no encontrada. Las funciones de IA están deshabilitadas.",
+      "roleRequired": "Por favor, introduce un rol para obtener una sugerencia.",
+      "invalidFormat": "Formato de horario inválido recibido de la IA.",
+      "suggestionFailed": "No se pudo obtener una sugerencia de horario. La IA puede estar ocupada o la solicitud no fue válida."
+    },
+    "user": {
+        "emailExists": "Ya existe un usuario con este correo electrónico."
+    },
+    "rating": {
+      "noBookingFound": "No se encontraron citas recientes sin calificar para esta dirección de correo.",
+      "alreadyRated": "Esta cita ya ha sido calificada.",
+      "mustSelectRating": "Debes seleccionar una calificación de estrellas."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PHP of AI-Powered Appointment Scheduler",
+  "description": "An intelligent application for businesses to manage employee availability. Employees can define their work schedules, appointment durations, and even get AI-powered schedule suggestions to optimize their time.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
