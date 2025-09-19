@@ -28,10 +28,12 @@ export const userService = {
 
     const data = (await res.json()) as LoginResponse;
 
-    // ✅ guarda SIEMPRE en localStorage con la clave esperada por authHeader()
+    // 
     if ('token' in data && data.token) {
-      localStorage.setItem('auth_token', data.token);
+      localStorage.setItem('auth_token', data.token);   // sigue igual
+      sessionStorage.setItem('token', data.token);      // nuevo: lo que usa authHeader()
     }
+
 
     if ('user' in data && data.user) {
       const user = normalizeUser(data.user);
@@ -42,8 +44,9 @@ export const userService = {
   },
 
   logout(): void {
-    // ✅ borra el mismo lugar/clave
+    // 
     localStorage.removeItem('auth_token');
+    sessionStorage.removeItem('token'); //nuevo
     sessionStorage.removeItem('currentUser');
   },
 

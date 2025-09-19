@@ -106,6 +106,7 @@ const BookingPage: React.FC = () => {
 
     try {
       // ⬇️ el service correcto es addBooking, no createBooking
+      console.log(customerName,customerEmail,selectedSlot.day,selectedSlot.time)
       await bookingService.addBooking({
         customerName,
         customerEmail,

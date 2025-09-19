@@ -42,7 +42,7 @@ const App: React.FC = () => {
   return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-
+  
 
   const renderPage = () => {
   if (route === '#/book') return <BookingPage />;
@@ -62,4 +62,4 @@ const App: React.FC = () => {
 };
 
 export default App;
-console.log('API:', import.meta.env.VITE_API_URL);
+

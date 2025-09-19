@@ -1,9 +1,15 @@
 // src/services/api.ts
-const API = import.meta.env.VITE_API_URL?.replace(/\/$/, '') || 'http://localhost:4000';
+// BACKEND en dev: Laravel expuesto en http://localhost (puerto 80)
+export const API_BASE = 'http://localhost' as const;
 
 export function authHeader(): Record<string, string> {
   const token = sessionStorage.getItem('token');
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
-export default API;
+// helpers de depuración
+;(window as any).__API_BASE__ = API_BASE;
+console.log('[API base]', API_BASE);
+
+// export default opcional por compatibilidad
+export default API_BASE;

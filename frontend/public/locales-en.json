@@ -1,0 +1,8 @@
+{
+  "hello": "Hello",
+  "app": {
+    "title": "Turnera",
+    "login": "Log in",
+    "logout": "Log out"
+  }
+}

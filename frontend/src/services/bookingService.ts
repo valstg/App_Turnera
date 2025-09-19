@@ -1,11 +1,11 @@
 // src/services/bookingService.ts
-import API from './api';
+import API, { authHeader } from './api';
 import type { Booking } from '../types';
 
-const authHeader = (): Record<string, string> => {
-  const t = localStorage.getItem('auth_token');
-  return t ? { Authorization: `Bearer ${t}` } : {};
-};
+//const authHeader = (): Record<string, string> => {
+ // const t = localStorage.getItem('auth_token');
+ // return t ? { Authorization: `Bearer ${t}` } : {};
+//};
 
 export type NewBooking = {
   customerName: string;
@@ -24,11 +24,12 @@ export const bookingService = {
   addBooking: async (b: NewBooking): Promise<Booking> => {
     const res = await fetch(`${API}/api/bookings`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...authHeader() }, // 👈 agrega auth si existe
+      headers: { 'Content-Type': 'application/json','Accept': 'application/json', ...authHeader() }, // 👈 agrega auth si existe
       body: JSON.stringify(b),
     });
     if (!res.ok) throw new Error('No se pudo crear el turno');
     const data = await res.json();
+    console.log(data)
     return normalize(data);
   },
 

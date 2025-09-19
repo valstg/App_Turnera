@@ -12,7 +12,22 @@ const router = Router();
 router.get('/me', authRequired, async (req, res) => {
   return res.json({ id: req.user.id, email: req.user.email, role: req.user.role, name: req.user.name });
 });
-
+router.get('/', authRequired, async (req, res) => {
+  try {
+    const users = await prisma.user.findMany({
+      select: {
+        id: true,
+        email: true,
+        name: true,
+        role: true,
+      },
+    });
+    return res.json(users);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: 'Internal server error' });
+  }
+});
 /**
  * POST /api/users
  * Owners can create users. (Optional for your app; keep it for completeness)
