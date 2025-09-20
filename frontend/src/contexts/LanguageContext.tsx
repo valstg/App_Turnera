@@ -1,5 +1,5 @@
-import React, { createContext, useState, useContext, useEffect,  useCallback } from 'react';
-import type { ReactNode } from 'react';  // <-- importación separada y tipada
+import React, { createContext, useState, useContext, useEffect, type ReactNode, useCallback } from 'react';
+
 interface LanguageContextType {
   locale: string;
   setLocale: (locale: string) => void;
@@ -29,16 +29,16 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   useEffect(() => {
     const fetchTranslations = async () => {
       try {
-        const response = await fetch(`/locales-${locale}.json`);
+        const response = await fetch(`/locales/${locale}.json`);
         if (!response.ok) {
-          throw new Error(`Could not load locales-${locale}.json`);
+          throw new Error(`Could not load locales/${locale}.json`);
         }
         const data = await response.json();
         setTranslations(data);
       } catch (error) {
         console.error("Failed to fetch translations:", error);
         if (locale !== 'en') {
-            setLocaleState('en');
+          setLocaleState('en');
         }
       }
     };
@@ -48,8 +48,8 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
 
   const setLocale = (newLocale: string) => {
     if (supportedLanguages[newLocale]) {
-        localStorage.setItem('locale', newLocale);
-        setLocaleState(newLocale);
+      localStorage.setItem('locale', newLocale);
+      setLocaleState(newLocale);
     }
   };
 

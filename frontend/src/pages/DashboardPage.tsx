@@ -369,11 +369,11 @@ const DashboardPage: React.FC = () => {
               </a>
             )}
             <button
-                onClick={() => { window.location.hash = '#/admin/bookings'; }}
-                className="px-3 py-2 text-sm font-medium text-white bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] rounded-md"
-              >
-                Ver reservas (admin)
-              </button>
+              onClick={() => { window.location.hash = '#/admin/bookings'; }}
+              className="px-3 py-2 text-sm font-medium text-white bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] rounded-md"
+            >
+              Ver reservas (admin)
+            </button>
 
             <button
               onClick={logout}
