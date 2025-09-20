@@ -1,6 +1,7 @@
 // src/services/api.ts
 // BACKEND en dev: Laravel expuesto en http://localhost (puerto 80)
-export const API_BASE = 'http://localhost' as const;
+//export const API_BASE = 'http://localhost' as const;
+export const API_BASE = 'https://app-turnos-api.alexandriademo.com' as const;
 
 export function authHeader(): Record<string, string> {
   const token = sessionStorage.getItem('token');
@@ -8,7 +9,7 @@ export function authHeader(): Record<string, string> {
 }
 
 // helpers de depuración
-;(window as any).__API_BASE__ = API_BASE;
+; (window as any).__API_BASE__ = API_BASE;
 console.log('[API base]', API_BASE);
 
 // export default opcional por compatibilidad

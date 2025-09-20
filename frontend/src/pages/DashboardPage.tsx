@@ -1,10 +1,10 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
-import type { ScheduleConfig, DaySchedule, User } from '../types';
+import type { ScheduleConfig, DaySchedule } from '../types';
 import { DAYS_OF_WEEK } from '../constants';
 import DayScheduleEditor from '../components/DayScheduleEditor';
 import CalendarView from '../components/CalendarView';
 import { suggestScheduleByRole } from '../services/geminiService';
-import { userService } from '../services/userService';
+//import { userService } from '../services/userService';
 import {
   SparklesIcon,
   ArrowRightOnRectangleIcon,
