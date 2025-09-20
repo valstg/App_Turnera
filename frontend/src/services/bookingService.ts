@@ -3,8 +3,8 @@ import API, { authHeader } from './api';
 import type { Booking } from '../types';
 
 //const authHeader = (): Record<string, string> => {
- // const t = localStorage.getItem('auth_token');
- // return t ? { Authorization: `Bearer ${t}` } : {};
+// const t = localStorage.getItem('auth_token');
+// return t ? { Authorization: `Bearer ${t}` } : {};
 //};
 
 export type NewBooking = {
@@ -17,6 +17,8 @@ export type NewBooking = {
 // Normaliza para que siempre exista bookedAt en el front
 const normalize = (b: any): Booking => ({
   ...b,
+  customerEmail: b?.customer_email ?? b?.customerEmail ?? '',
+  customerName: b?.customer_name ?? b?.customerName ?? '',
   bookedAt: b?.bookedAt ?? b?.createdAt ?? undefined,
 });
 
@@ -24,7 +26,7 @@ export const bookingService = {
   addBooking: async (b: NewBooking): Promise<Booking> => {
     const res = await fetch(`${API}/api/bookings`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json','Accept': 'application/json', ...authHeader() }, // 👈 agrega auth si existe
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', ...authHeader() }, // 👈 agrega auth si existe
       body: JSON.stringify(b),
     });
     if (!res.ok) throw new Error('No se pudo crear el turno');
@@ -67,13 +69,13 @@ export const bookingService = {
   // Busca un turno por email (no autenticado). Si tu backend aún no soporta este query,
   // devolvemos null y la UI mostrará "noBookingFound".
   findBookingToRateByEmail: async (email: string): Promise<Booking | null> => {
-  const url = new URL(`${API}/api/bookings/public/find`);
-  url.searchParams.set('email', email);
-  const res = await fetch(url.toString());
-  if (!res.ok) return null;
-  const data = await res.json();
-  return data ? normalize(data) : null;
-},
+    const url = new URL(`${API}/api/bookings/public/find`);
+    url.searchParams.set('email', email);
+    const res = await fetch(url.toString());
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data ? normalize(data) : null;
+  },
 
 
   // Solo delega al endpoint PATCH existente
