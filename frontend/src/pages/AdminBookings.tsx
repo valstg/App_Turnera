@@ -3,6 +3,7 @@ import { bookingService } from '../services/bookingService';
 import type { Booking, DayOfWeek } from '../types';
 import { DAYS_OF_WEEK } from '../constants';
 import { useLanguage } from '../contexts/LanguageContext';
+import BackButton from '../components/BackButton';
 
 type RatedFilter = 'all' | 'rated' | 'unrated';
 
@@ -86,6 +87,11 @@ const AdminBookings: React.FC = () => {
       </header>
 
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <header className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+          <BackButton to="#" />
+        <h1 className="text-2xl font-bold text-gray-900">Reservas</h1>
+        </header>
+
         {/* Filtros */}
         <div className="bg-white p-4 rounded-xl shadow border border-gray-100 mb-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-3">

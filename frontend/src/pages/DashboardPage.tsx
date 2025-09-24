@@ -360,14 +360,7 @@ const DashboardPage: React.FC = () => {
             <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
               <UserIcon className="w-6 h-6 text-[var(--color-primary)]" />
             </div>
-            {(user?.role === 'owner' || user?.role === 'manager') && (
-              <a
-                href="#/admin/bookings"
-                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
-              >
-                Ver reservas
-              </a>
-            )}
+            
             <button
               onClick={() => { window.location.hash = '#/admin/bookings'; }}
               className="px-3 py-2 text-sm font-medium text-white bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] rounded-md"

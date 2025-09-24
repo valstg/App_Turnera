@@ -4,6 +4,7 @@ import { DAYS_OF_WEEK } from '../constants';
 import { useLanguage } from '../contexts/LanguageContext';
 import { CalendarDaysIcon, SparklesIcon } from '../components/icons';
 import { bookingService } from '../services/bookingService';
+import BackButton from '../components/BackButton';
 
 // Slot local
 interface Slot {
